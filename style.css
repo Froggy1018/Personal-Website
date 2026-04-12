@@ -4,16 +4,59 @@
 }
 
 header{
-    h2{
+    background-image: image-set('https://img.spoonflower.com/c/18023548/p/f/m/BAs_cKu5m2a5jGtXobXriUD7qsRQW6kWnO8nzhlw7dCSa3biXIm0C0NvWw/Evelyn%20petite%20ditsy%20cottagecore%20shabby%20chic%20Floral%20Pales%20Sage%20SMALL.jpg');
+    background-size:auto;
+    h1{
         font-family: 'Times New Roman', Times, serif;
+        color:#546B41;
     }
     text-align: left;
     display: flex;
     padding: 20px;
-
     button{
         border: none;
         border-radius: 15px;
-        padding: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #546B41;
+        a{
+            color: white;
+        }
     }
+    button:hover{
+        color:#546B41;
+        background-color: white;
+        a{
+            color: #546B41;
+        }
+        }
+    a{
+        color: #546B41;
+        text-decoration: none;
+    }
+}
+
+#about{
+    background-color: #546B41;
+    padding: 100px;
+    background-size: cover;
+}
+
+#container{
+    background-color: rgba(225, 225, 225, 0.363);
+    border-radius: 15px;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#projectspreview{
+    padding: 100px;
+}
+
+#card{
+    gap: 10px;
+    
 }
