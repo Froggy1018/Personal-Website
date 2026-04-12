@@ -1,0 +1,19 @@
+*{
+    margin:0;
+
+}
+
+header{
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    text-align: left;
+    display: flex;
+    padding: 20px;
+
+    button{
+        border: none;
+        border-radius: 15px;
+        padding: 20px;
+    }
+}
