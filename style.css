@@ -154,6 +154,22 @@ header{
     border-radius: 0 0 100px 100px ;
 }
 
+.semicircle2{
+    width: 100px;
+    height: 50px ;
+    background-color: #acb799;
+    border-radius: 100px 100px 0 0;
+}
+
 #topnavhover:hover{
     color:#313E17;
+}
+
+#skillbit{
+    background-image:image-set("https://img.spoonflower.com/c/18023548/p/f/m/BAs_cKu5m2a5jGtXobXriUD7qsRQW6kWnO8nzhlw7dCSa3biXIm0C0NvWw/Evelyn%20petite%20ditsy%20cottagecore%20shabby%20chic%20Floral%20Pales%20Sage%20SMALL.jpg");
+    padding-bottom: 100px;
+}
+
+#image{
+    height: 50px;
 }
