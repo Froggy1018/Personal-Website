@@ -32,3 +32,50 @@ modals.forEach(function(modal) {
         }
     }
 });
+
+function showModal(modalId) {
+    var modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = "block";
+    }
+}
+
+var contactForm = document.getElementById("contact-form");
+if (contactForm) {
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        var formData = new FormData(contactForm);
+        var action = contactForm.action;
+
+        fetch(action, {
+            method: "POST",
+            body: formData,
+            headers: {
+                Accept: "application/json"
+            }
+        })
+        .then(function(response) {
+            if (response.ok) {
+                contactForm.reset();
+                showModal("form-success-modal");
+            } else {
+                return response.json().then(function(data) {
+                    throw new Error(data.error || "Submission failed");
+                });
+            }
+        })
+        .catch(function() {
+            alert("Unable to send message. Please try again later.");
+        });
+    });
+}
+
+var successOkButton = document.getElementById("success-ok-button");
+if (successOkButton) {
+    successOkButton.addEventListener("click", function() {
+        var modal = document.getElementById("form-success-modal");
+        if (modal) {
+            modal.style.display = "none";
+        }
+    });
+}

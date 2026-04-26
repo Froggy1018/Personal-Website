@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset = UTF-8>
+    <head>
+        <title>Contact me!</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cedarville+Cursive&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="topnav">
+                    <h1><a href="index.html" style="margin-left: 40px; font-size: 50px;"><b>Jieeun</b></a>
+                    <a href="index.html" style="margin-left: 350px;" id="topnavhover">About</a>
+                    <a href="skills.html" style="margin-left: 60px; " id="topnavhover">Skills</a>
+                    <a href="projects.html" style="margin-left: 60px;" id="topnavhover">Projects</a>
+                    <button style="margin-left: 60px; font-size: 24px; font-family: 'Cedarville Cursive'"><a href="contact.html">Contact Me</a></button></h1>
+            </div>
+        </header>
+
+            <div id="container" style="border-radius:0px; background-color: #546B41; padding-right: 50px;">
+                <h1 style="text-align: left; font-size: 50px; font-family: 'Caveat'; margin-right: 10px;"><span style="background-color: #313E17;">Contact </span> Me!<br><span style="font-size: 30px;">Feel free to message me if you want to talk about something, whether it be photography, books, or coding!
+                <br><a href="https://www.linkedin.com/in/jieeun-heo-a72a18321/"><button>Linkedin</button></a>
+                <a href="https://www.instagram.com/jess_bob18/"><button>Instagram</button></a></h1>
+            
+            
+                <div id="container" style="background-image: image-set('https://img.spoonflower.com/c/18023548/p/f/m/BAs_cKu5m2a5jGtXobXriUD7qsRQW6kWnO8nzhlw7dCSa3biXIm0C0NvWw/Evelyn%20petite%20ditsy%20cottagecore%20shabby%20chic%20Floral%20Pales%20Sage%20SMALL.jpg');">
+                <form id="contact-form" action="https://formspree.io/f/mwvazrrw" method="POST">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="user-name" required><br><br>
+                    <label for="email">Email, or where I can reach you</label><br>
+                    <input type="text" id="email" name="email" required><br><br>
+                    <label for="subject">Subject</label><br>
+                    <input type="text" id="subject" name="subject" required><br><br>
+                    <label for="message">Messsage</label><br>
+                    <input type="text" id="message" name="message" required><br><br>
+
+
+                    <button type="submit">Submit</button>
+                </form>
+
+                <div id="form-success-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Thank you!</h2>
+                        <p>Your message was sent successfully.</p>
+                        <button type="button" id="success-ok-button">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="main.js"></script>
+</html>

@@ -130,6 +130,17 @@ header{
     width: 80%
 }
 
+#form-success-modal .modal-content {
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+#form-success-modal button {
+    margin-top: 20px;
+}
+
 .close{
     color: #aaa;
     float: right;
@@ -178,4 +189,12 @@ header{
 #hackathons{
     background-color: #313E17;
     padding-bottom: 100px;
+}
+
+label, input{
+    font-family: Caveat;
+    text-align: left;
+    font-size: 40px;
+    border-radius: 20px;
+    border: none;
 }
